@@ -66,3 +66,39 @@ interface User {
 - can also combine type aliases and unions
 - `type MaybePopularTag = PopularTag | null;`
 - `const dragonsTag: PopularTag[] = 'dragon';`
+- combine together type alias
+
+### Any, never, void, unknown
+### Void
+```ts
+const doSomething = (): void  => {
+  console.log('doSomething');
+}
+```
+- a void function is one that only logs to console, doesn't return
+- what is void? undefined and null
+- void is only really used for functions, not variables
+- 
+#### Any
+- officially the worst type in typescript
+- type of "typescript stop checking this and ignore please"
+- a last resort for all your problems!
+- don't use!
+
+#### Unknown
+- alternative to type Any
+- can't assign unknown or a var that is of type unknown directly in other types
+
+#### Never
+- a function with never can't be executed to the end
+```ts
+const doSomething = () =? {
+  throw 'never';
+}
+```
+
+#### Type Assertion in TS
+`let pageNumber: string = "1";`
+`let numericPageNumber: number = (pageNumber as unknown) as number;`
+
+### Working with the DOM
