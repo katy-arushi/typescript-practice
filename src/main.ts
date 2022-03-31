@@ -39,17 +39,30 @@ const user = new User('Arushi', 'Katyal');
 console.log(user.getFullName);
 
 class Admin extends User {
-  private editor: string
+	private editor: string;
 
-  setEditor(editor: string): void {
-    this.editor = editor
-  }
+	setEditor(editor: string): void {
+		this.editor = editor;
+	}
 
-  getEditor(): string {
-    return this.editor
-  }
+	getEditor(): string {
+		return this.editor;
+	}
 }
 
 const admin = new Admin('Foo', 'Bar');
 console.log(admin.getEditor);
 
+const addId = <T>(obj: T) => {
+	const id = Math.random().toString(16);
+	return {
+		...obj,
+		id,
+	};
+};
+
+const myUser = {
+	name: 'Arushi',
+};
+
+const result = addId(user);

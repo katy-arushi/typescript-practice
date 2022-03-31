@@ -98,8 +98,8 @@ const doSomething = () =? {
 ```
 
 #### Type Assertion in TS
-`let pageNumber: string = "1";`
-`let numericPageNumber: number = (pageNumber as unknown) as number;`
+- `let pageNumber: string = "1";`
+- `let numericPageNumber: number = (pageNumber as unknown) as number;`
 
 ### Working with the DOM
 - TS doesn't parse markup
@@ -116,3 +116,4 @@ const doSomething = () =? {
 - can use interfaces with classes to force classes to follow them
 - static properties: accessible only on the class
 - inheritance
+- write classes in more strict ways like Java or C#
