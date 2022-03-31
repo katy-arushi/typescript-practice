@@ -102,3 +102,17 @@ const doSomething = () =? {
 `let numericPageNumber: number = (pageNumber as unknown) as number;`
 
 ### Working with the DOM
+- TS doesn't parse markup
+- superclasses
+
+### Classes in TS
+- everything is public by default
+- public, private, protected
+- private: can only use it inside a class
+- ts has good autocomplete for this
+- protected: can use inside children for inheritance
+- private, public and protected exists only in ts
+- readonly: for making constant properties of a class that can't change
+- can use interfaces with classes to force classes to follow them
+- static properties: accessible only on the class
+- inheritance
